@@ -5,21 +5,12 @@
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<!-- 카카오 이미지 버튼 시작 -->
-<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. 갑자</p>
-<a id="kakao-link-btn" href="javascript:sendLink()">
-  <img
-    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-  />
-</a>
-<!-- 카카오 이미지 버튼 종료 -->
-
     <input type="button" onClick="sendLinkCustom();" value="Custom"/>
     <input type="button" onClick="sendLinkDefault();" value="Default"/>
 
 <script type="text/javascript">
     function sendLinkCustom() {
-        Kakao.init("6c36475a62fca8386c0a0964809dcaf1");
+        Kakao.init("cb0bc9138bf95e950b93a724e4834fe3");
         Kakao.Link.sendCustom({
             templateId: 89474
         });
